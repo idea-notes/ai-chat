@@ -153,6 +153,22 @@ export function AppThemeProvider({children}: PropsWithChildren) {
                             '& .MuiOutlinedInput-root fieldset': {
                                 borderColor: theme.palette.divider
                             },
+                            '& .MuiInputBase-inputMultiline': {
+                                overflow: 'auto',
+                                '&::-webkit-scrollbar': {
+                                width: '8px',
+                                },
+                                '&::-webkit-scrollbar-track': {
+                                background: theme.palette.background.default, 
+                                },
+                                '&::-webkit-scrollbar-thumb': {
+                                background: "lightgray",
+                                borderRadius: '10px',
+                                },
+                                '&::-webkit-scrollbar-thumb:hover': {
+                                backgroundColor: '#555'
+                                },
+                            }
                         })
                     }
                 },

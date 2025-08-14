@@ -1,5 +1,5 @@
 import { Box, Button, TextField, useTheme } from '@mui/material';
-import { Dispatch, SetStateAction, useCallback, useState } from 'react';
+import { useState } from 'react';
 import { LuSendHorizontal } from 'react-icons/lu';
 import { MdOutlineAttachFile } from 'react-icons/md';
 import { useChatMessages } from 'shared/model/chatMessages';
@@ -21,6 +21,8 @@ export function ChatForm() {
             }
 
             setMessages([...messages, newMessage])
+
+            setText("")
         }
 
     }
@@ -32,10 +34,15 @@ export function ChatForm() {
                 <MdOutlineAttachFile color={theme.palette.text.secondary} size={25} />
             </Button>
 
-            <TextField 
+            <TextField
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 multiline 
+                sx={{
+                    scrollbarColor: "#000", 
+                    msScrollbarTrackColor: "black"
+
+                }}
                 onKeyDown={(e) => {
                     if(e.key === "Enter" && !e.shiftKey) {
                         e.preventDefault();
@@ -43,7 +50,7 @@ export function ChatForm() {
                         handleMessage()
                     }
                 }}
-                maxRows={3} 
+                maxRows={7} 
                 placeholder="Спросите о чем-нибудь..." 
                 size="small" 
             /> 
