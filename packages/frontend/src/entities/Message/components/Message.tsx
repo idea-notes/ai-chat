@@ -21,11 +21,7 @@ function MessageComponent({message} : MessageProps) {
                 alignSelf: isUserMessage ? "flex-end" : "center", 
                 whiteSpace: "pre-wrap", 
                 wordBreak: "break-word", 
-<<<<<<< HEAD
-                borderRadius: 4, //one // some comments // some other comments // comment one one one one
-=======
-                borderRadius: 4, //one // some comments // some other comments // comments
->>>>>>> 33d093b72fd30e9b23c4e01cefe2776d92516127
+                borderRadius: 4,
                 p: 2, 
                 mx: "2%",
                 my: 2
