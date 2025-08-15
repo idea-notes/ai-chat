@@ -15,7 +15,7 @@ function MessageComponent({message} : MessageProps) {
     return (
         <Box 
             sx={(t) => ({
-                bgcolor: t.palette.background.lightGray,
+                bgcolor: "black",
                 width: isUserMessage ? "40%" : "60%", 
                 boxSizing: "border-box", 
                 alignSelf: isUserMessage ? "flex-end" : "center", 
