@@ -8,6 +8,9 @@ interface MessageProps {
 }
 
 
+// some comment element
+
+
 function MessageComponent({message} : MessageProps) {
     const isUserMessage = message.type === "user"
 
