@@ -12,8 +12,6 @@ function MessageComponent({message} : MessageProps) {
     const isUserMessage = message.type === "user"
 
 
-    // one one one one 111111111
-    
     return (
         <Box 
             sx={(t) => ({
