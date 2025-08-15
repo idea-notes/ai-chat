@@ -20,8 +20,8 @@ function MessageComponent({message} : MessageProps) {
                 boxSizing: "border-box", 
                 alignSelf: isUserMessage ? "flex-end" : "center", 
                 whiteSpace: "pre-wrap", 
-                wordBreak: "break-word", 
-                borderRadius: 4,
+                wordBreak: "break-word
+                borderRadius: 4, // some comments text
                 p: 2, 
                 mx: "2%",
                 my: 2
